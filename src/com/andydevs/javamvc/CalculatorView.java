@@ -71,8 +71,8 @@ public class CalculatorView extends JFrame
 		addWindowListener(new CloseWindowAdapter());
 
 		// Config Input and Output Fields
-		a = new JTextField();
-		b = new JTextField();
+		a = new JTextField(10);
+		b = new JTextField(10);
 		x = new JLabel("Output: " + 0);
 
 		// Config execute operation
@@ -153,8 +153,8 @@ public class CalculatorView extends JFrame
 	/**
 	 * Handels the exiting of the program
 	 * 
-	 * @author  Anshul Kharbanda
-	 * @created 11 - 20 - 2016
+	 * @author Anshul Kharbanda
+	 * @since  1.0.0
 	 */
 	private class CloseWindowAdapter extends WindowAdapter 
 	{
@@ -172,8 +172,8 @@ public class CalculatorView extends JFrame
 	/**
 	 * Handles running execute function in controller
 	 *
-	 * @author  Anshul Kharbanda
-	 * @created 11 - 21 - 2016
+	 * @author Anshul Kharbanda
+	 * @since  1.0.0
 	 */
 	private class ExecuteActionListener implements ActionListener
 	{
